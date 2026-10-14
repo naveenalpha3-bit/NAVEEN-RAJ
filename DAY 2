@@ -1,0 +1,128 @@
+1)
+import java.util.Scanner;
+
+public class EvenOrOdd {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+
+        System.out.println(number % 2 == 0 ? "Even" : "Odd");
+    }
+}
+2)
+import java.util.Scanner;
+
+public class GreaterNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int first = sc.nextInt();
+        int second = sc.nextInt();
+
+        System.out.println(first == second ? "Equal"
+                : first > second ? first : second);
+    }
+}
+3)
+import java.util.Scanner;
+
+public class PositiveOrNegative {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+
+        System.out.println(number > 0 ? "Positive"
+                : number < 0 ? "Negative" : "Zero");
+    }
+}
+4)
+import java.util.Scanner;
+
+public class EligibleAge {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int age = sc.nextInt();
+
+        System.out.println(age >= 18 ? "Eligible" : "Not Eligible");
+    }
+}
+5)
+import java.util.Scanner;
+
+public class DivisibilityCheck {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+
+        System.out.println(number % 3 == 0 && number % 5 == 0
+                ? "Divisible by Both" : "Not Divisible by Both");
+    }
+}
+6)
+import java.util.Scanner;
+
+public class BiggestOfThree {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int first = sc.nextInt();
+        int second = sc.nextInt();
+        int third = sc.nextInt();
+
+        int largest = first >= second
+                ? (first >= third ? first : third)
+                : (second >= third ? second : third);
+
+        System.out.println(largest);
+    }
+}
+7)
+import java.util.Scanner;
+
+public class LastDigitEven {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+
+        System.out.println(Math.abs(number % 10) % 2 == 0 ? "Yes" : "No");
+    }
+}
+8)
+import java.util.Scanner;
+
+public class StudentResult {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int firstMark = sc.nextInt();
+        int secondMark = sc.nextInt();
+        int thirdMark = sc.nextInt();
+
+        System.out.println(firstMark >= 35 && secondMark >= 35 && thirdMark >= 35
+                ? "Pass" : "Fail");
+    }
+}
+9)
+import java.util.Scanner;
+
+public class FreeDelivery {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double amount = sc.nextDouble();
+        boolean premiumMember = sc.nextBoolean();
+
+        System.out.println(amount >= 1000 || premiumMember
+                ? "Free Delivery" : "Delivery Charge Applies");
+    }
+}
+10)
+import java.util.Scanner;
+
+public class DiscountCalculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double amount = sc.nextDouble();
+
+        double finalAmount = amount >= 2000 ? amount * 0.90 : amount;
+        System.out.println(finalAmount);
+    }
+}
+
+
